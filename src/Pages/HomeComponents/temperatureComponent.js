@@ -37,7 +37,7 @@ export const Temp = () => {
         </div>
         <div>
           <p>Weather</p>
-          <p>{city.Weather +  "" || ""}</p>
+          <p>{city.Weather || ""}</p>
         </div>
       </div>
     </div>
