@@ -16,31 +16,30 @@ export const Temp = () => {
       </div>
       <div className="extraInfo" style={ image === AppIcon ? {display: "none"}: {display: "grid"}}>
         <div>
+          <p>Temperature</p>
           <p>{Math.floor(city.Temp) + " °C" || ""}</p>
-          <p></p>
         </div>
         <div>
+          <p>Humidity</p>
           <p>{city.Humidity + " RH" || ""}</p>
-          <p></p>
         </div>
         <div>
+          <p>Pressure</p>
           <p>{city.Pressure + " mB"}</p>
-          <p></p>
         </div>
         <div>
+          <p>Feels Like</p>
           <p>{Math.floor(city.FeelsLike) + " °C" || ""}</p>
-          <p></p>
         </div>
         <div>
+          <p>Wind speed</p>
           <p>{city.Wind + " km/h" || ""}</p>
-          <p></p>
         </div>
         <div>
+          <p>Weather</p>
           <p>{city.Weather +  "" || ""}</p>
-          <p></p>
         </div>
       </div>
-      <div className="otherDays"></div>
     </div>
   );
 };
