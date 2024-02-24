@@ -17,12 +17,16 @@ export const Navbar = () => {
       <Link to="/Contact">Contact</Link>
       <form className="submitCity" onSubmit={handleSubmit}>
         <input
+          list="worldCities"
           id="inputCity"
           type="text"
           placeholder="Enter city name"
           value={city.Name}
           onChange={(e) => setCity({ ...city, Name: e.target.value })}
         />
+        <datalist id="worldCities">
+          <option value={city.Name}>{city.Name}</option>
+        </datalist>
         <button type="submit">Get Weather</button>
       </form>
     </div>
